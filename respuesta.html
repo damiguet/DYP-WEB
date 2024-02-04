@@ -1,8 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/DTD/strict.dtd"> 
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>¡Hola mundo!</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <title>Obtener variable de la URL con JavaScript</title>
+</head>
+<body>
+
+  <script>
+    // Obtener la cadena de consulta (query string) de la URL
+    const queryString = window.location.search;
+
+    // Crear un objeto URLSearchParams a partir de la cadena de consulta
+    const urlParams = new URLSearchParams(queryString);
+
+    // Obtener el valor de la variable "variable"
+    const variableValue = urlParams.get('variable');
+
+    // Imprimir el valor en la consola o en el documento
+    console.log('Valor de la variable:', variableValue);
+
+    // Imprimir en el documento
+    document.body.innerHTML = 'Valor de la variable: ' + variableValue;
+  </script>
+
+</body>
 </html>
