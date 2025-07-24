@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: "Mi sitio con Jekyll"
+theme: jekyll-theme-minimal  # o cualquier tema soportado
+baseurl: "/DYP-WEB"  # nombre del repositorio
+url: "https://damiguet.github.io"
